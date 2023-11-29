@@ -1,7 +1,7 @@
-title: Python Project
+title: Methodenparameter, Rückgabewerte und erste Algorithmen
 plan:
-- title: Welcome
-  statement: markdowns/welcome.md
+- title: Einstieg - Schaltjahraufgabe
+  statement: markdowns/0_schaltjahr.md
 projects:
   python:
     root: /python-project
