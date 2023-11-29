@@ -4,6 +4,12 @@ plan:
   statement: markdowns/0_schaltjahr.md
 - title: Methodenparameter
   statement: markdowns/1_parameter.md
+- title: Rückgabewerte
+  statement: markdowns/2_rueckgabewerte.md
+- title: Listen durchlaufen und ausgeben
+  statement: markdowns/3_listen.md
+- title: Bonus: Schaltjahreslisten
+  statement: markdowns/4_Bonus_schaltjahrlisten.md
 projects:
   python:
     root: /python-project

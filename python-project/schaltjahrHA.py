@@ -53,6 +53,7 @@ def send_msg(channel, msg):
 
 def success():
     print("TECHIO> success true")
+    send_msg("Super gemacht!", "Du hast die Aufgabe gelöst!")
 
 
 def fail():

@@ -25,7 +25,7 @@ Wir erhalten also **unterschiedliche** Ergebnisse beim Aufruf **derselben** Funk
 
 Wir nennen "das was in den Klammern steht" **Methodenparameter**, **Funktionsparameter** oder einfach nur **Parameter**.
 
-Mithilfe von Parametern kann einer Funktion eine Information mitgegeben werden. Probiere es anhand des nächsten Beispiels aus!
+Mithilfe von Parametern kann einer Funktion eine Information (oder auch mehrere Informationen) mitgegeben werden. Eine Funktion kann beliebig viele, mit Komma getrennte Parameter haben. Eine Funktion zum Bilden der Summe zweier Zahlen könnte so aussehen:
 
 ```python runnable
 def addiere(x, y):
@@ -37,3 +37,55 @@ addiere(-1, 1)
 addiere(7, 5)
 addiere("Hallo", " Welt!")
 ```
+
+?[Welche Aussagen zu Parametern sind wahr?]
+- [x] In der Methodendefinition stehen die Namen der Parameter in Klammern hinter dem Methodennamen.
+- [x] Parameter kann ich in Methoden genauso verwenden, wie Variablen.
+- [x] Funktionenparameter werden verwendet, um mit derselben Funktion unterschiedliche Probleme zu lösen.
+
+## Aufgabe: Subtraktion implementieren
+
+Definiere in der nachfolgenden Code-Box eine Funktion `subtrahiere()`, die zwei Parameter erhält und die Differenz der beiden Parameter mit `print()` ausgibt. Bitte gib **nur das Ergebnis** ohne weiteren Text aus! Aufrufbeispiel:
+
+```python
+subtrahiere(1, 2)
+# gibt -1 aus
+```
+
+@[Subtrahieren]({"stubs": ["subtrahiere.py"], "command": "python3 test_subtrahiere.py", "project": "python"})
+
+## Anwendung aufs Schaltjahr
+
+Nun wollen wir unser Schaltjahrbeispiel so umbauen, dass die Methode `JahreszahlPruefen()` einen Parameter erhält, in dem das zu prüfende Jahr steht. Mögliche Aufrufe sollen so aussehen:
+
+```python
+JahreszahlPruefen(1998)
+# gibt "Kein Schaltjahr!" aus
+JahreszahlPruefen(2000)
+# gibt "Schaltjahr!" aus
+```
+
+@[Jahreszahl als Parameter mitgeben]({"stubs": ["schaltjahrParam.py"], "command": "python3 test_schaltjahrParam.py", "project": "python"})
+
+## Kontrollfragen zu Parametern
+
+?[Welche Funktionen verwenden Parameter (sinnvoll)?]
+- [x] def funktion(parameter):
+        funktion2(parameter)
+- [ ] def funktion():
+        funktion2(parameter)
+- [ ] def funktion(parameter):
+        funktion2(baum)
+- [x] def funktion(parameter1, parameter2):
+        funktion(parameter1, parameter1 + parameter2)
+
+?[Wir benötigen Parameter ...]
+- [x] um mit einzelnen Funktionen viele unterschiedliche ähnliche Dinge zu tun (z.B. print("A") und print("B"))
+- [ ] eigentlich gar nicht, sie sind nur dazu da, uns das Leben schwer zu machen.
+- [x] um Informationen von außerhalb einer Funktion in der Funktion verwenden zu können.
+
+?[Was stimmt bei Paramtern und Funktionen:]
+- [ ] Wenn ich eine Funktion `fun()` aufrufe, die einen Parameter mit dem Namen `zahl` hat, dann schreibe ich fun(zahl).
+- [x] Wenn ich eine Funktion `fun()` definieren will, die einen Parameter mit dem Namen `zahl` hat, dann schreibe ich `def fun(zahl):` usw.
+- [x] Wenn ich eine Variable `buchstabe = "a"` definiert habe, und sie an eine Funktion `def fun(zahl): ...` als Parameter übergeben will, dann schreibe ich zum Aufrufen der Funktion `fun(buchstabe)`.
+- [ ] Wenn ich eine Variable `buchstabe = "a"` als Parameter an eine Funktion `fun(...)` übergeben will, dann muss die Funktion so definiert sein: `def fun(buchstabe): ...`
