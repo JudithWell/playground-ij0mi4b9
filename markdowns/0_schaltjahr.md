@@ -38,7 +38,7 @@ Um die Aufgabe hier online testen zu können, wurde die Vorlage leicht abgeände
 
 @[Testen der Schaltjahr Hausaufgabe]({"stubs": ["schaltjahrHA.py"], "command": "python3 schaltjahrHA.py", "project": "python"})
 
-
+Dieses Ergebnis werden wir im folgenden wieder brauchen, aber erst noch ein paar Basics für heute im nächsten Abschnitt.
 
 
 

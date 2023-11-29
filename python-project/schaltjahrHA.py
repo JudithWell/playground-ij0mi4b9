@@ -5,7 +5,7 @@ def istTeilerVon(teiler, zahl):
     """
     return ((zahl % teiler) == 0)
 
-// { autofold
+# { autofold
 """ 
 Geheimer Code zu Testzwecken
 """
@@ -68,7 +68,7 @@ def test_schaltjahr():
         fail()
         send_msg("Das hat nicht geklappt! 🐞", e)
 
-// }
+# }
 
 def JahreszahlEingebenUndPruefen():
     '''
