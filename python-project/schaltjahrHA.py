@@ -1,3 +1,9 @@
+def istTeilerVon(teiler, zahl):
+    """
+    Prüft, ob zahl durch teiler teilbar ist.
+    Z.B. liefert istTeilerVon(2, 4) True zurück.
+    """
+    return ((zahl % teiler) == 0)
 
 // { autofold
 """ 
@@ -63,14 +69,6 @@ def test_schaltjahr():
         send_msg("Das hat nicht geklappt! 🐞", e)
 
 // }
-
-def istTeilerVon(teiler, zahl):
-    """
-    Prüft, ob zahl durch teiler teilbar ist.
-    Z.B. liefert istTeilerVon(2, 4) True zurück.
-    """
-    return ((zahl % teiler) == 0)
-
 
 def JahreszahlEingebenUndPruefen():
     '''

@@ -1,4 +1,4 @@
-# Schaltjahre
+# Schaltjahre Kontrolle der Hausaufgabe
 
 Als Hausaufgabe habt ihr ein Python-Programm erarbeitet, das eine Jahreszahl einliest und anschließend ausgibt, ob es sich dabei um eine Jahreszahl handelt. Die folgenden Bedingungen bestimmen, ob ein Jahr ein Schaltjahr ist:
 
