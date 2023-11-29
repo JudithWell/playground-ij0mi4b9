@@ -5,6 +5,28 @@ def istTeilerVon(teiler, zahl):
     """
     return ((zahl % teiler) == 0)
 
+def JahreszahlEingebenUndPruefen():
+    '''
+    Um das Programm online testen zu können, musste das Einlesen
+    mit input() entfernt werden!
+    '''
+    # aktuelleEingabe = input("Bitte Jahreszahl eingeben.  ")
+    # jahr = int(aktuelleEingabe)
+    global jahr
+    
+    print("Jahreszahl: " + str(jahr)) 
+    
+    ''' 
+    Ergänze hier deine Prüfung der Jahreszahl!
+    '''
+    if istTeilerVon(4, jahr):
+        print("Schaltjahr!")
+    else:
+        print("Kein Schaltjahr!")
+    ''' ----- '''
+
+
+
 # { autofold
 """ 
 Geheimer Code zu Testzwecken
@@ -69,26 +91,6 @@ def test_schaltjahr():
         send_msg("Das hat nicht geklappt! 🐞", e)
 
 # }
-
-def JahreszahlEingebenUndPruefen():
-    '''
-    Um das Programm online testen zu können, musste das Einlesen
-    mit input() entfernt werden!
-    '''
-    # aktuelleEingabe = input("Bitte Jahreszahl eingeben.  ")
-    # jahr = int(aktuelleEingabe)
-    global jahr
-    
-    print("Jahreszahl: " + str(jahr)) 
-    
-    ''' 
-    Ergänze hier deine Prüfung der Jahreszahl!
-    '''
-    if istTeilerVon(4, jahr):
-        print("Schaltjahr!")
-    else:
-        print("Kein Schaltjahr!")
-    ''' ----- '''
 
 ''' Die folgende Zeile nicht ändern! '''
 test_schaltjahr()
