@@ -6,7 +6,7 @@ def istTeilerVon(teiler, zahl):
     return ((zahl % teiler) == 0)
 
 '''
-Ergänze unten die Methode JahreszahlPruefen().
+Ergänze unten die Methode JahreszahlPruefen() mit einem Parameter und einem Rückgabewert!.
 '''
 
 

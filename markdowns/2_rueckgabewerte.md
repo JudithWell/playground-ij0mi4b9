@@ -4,11 +4,11 @@ Im letzten Abschnitt haben wir Parameter eingeführt. Mit Parametern konnten wir
 
 Ziehen wir eine Bilanz zum Schaltjahrprogramm:
 - ~~Die Eingabe der Jahreszahl erfolgte über die Tastatur nach Starten des Programms.~~
-- [x] Die Jahreszahl wird als Parameter übergeben.
+- Die Jahreszahl wird als Parameter übergeben.
 - Zur Kontrolle wurde die Jahreszahl auch wieder ausgegeben.
 - Außerdem erfolgt die Rückmeldung des Programms in Textform ("Schaltjahr!" oder "Kein Schaltjahr!").
 
-Der Zweite Punkt, die Ausgabe zur Kontrolle, kann ohne weiteres weggelassen werden, aber wir benötigen noch eine Möglichkeit, eine Rückmeldung an das Programm zurückzuliefern!
+Der Zweite Punkt, die Ausgabe zur Kontrolle, kann ohne weiteres weggelassen werden, aber wir benötigen noch eine Möglichkeit, eine Rückmeldung an das Programm zurückzuliefern, statt nur eine Textausgabe zu machen!
 
 # Rückgabewerte für Methoden
 
@@ -31,7 +31,7 @@ def addiere(x, y):
 Der englische Begriff "return" kann hier auf zwei Arten ins Deutsche übersetzt werden:
 
 - "zurückkehren": Führt der Computer gerade eine Funktion aus und erreicht eine Zeile, in der return steht, kehrt der Computer zurück an die Stelle, an der die Funktion aufgerufen wurde. Das bedeutet, dass **Code in Zeilen nach return nicht mehr ausgeführt wird**!
-- "zurückgeben": Der Ausdruck, der nach `return` in derselben Zeile steht, wird zum Rückgabe wert der Funktion.
+- "zurückgeben": Der Ausdruck, der nach `return` in derselben Zeile steht, wird zum Rückgabewert der Funktion.
 
 Letzteres ist genau die Funktionalität, die wir uns gewünscht haben! Mach dich in der nächsten Codebox mit der Verwendung von Rückgabewerten vertraut:
 
@@ -39,14 +39,18 @@ Letzteres ist genau die Funktionalität, die wir uns gewünscht haben! Mach dich
 def addiere(x, y):
     summe = x + y
     return summe
-# schreibt den Rückgabewert in die Variable zahl
+
+# Schreibt den Rückgabewert in die Variable zahl
 zahl = addiere(1,2)
 print(zahl)
+
 # Verwendet die Variable zahl als Parameter
 zahl2 = addiere(zahl, zahl)
 print(zahl2)
+
 # Verwendet "direkt" den Rückgabewert als Parameter für print()
 print(addiere(5,7))
+
 # Verschachteln von Funktionen:
 print(addiere(1, addiere(2, 3)))
 ```
@@ -93,10 +97,11 @@ else:
 
 @[Schaltjahr? Rückgabewert als Boolean erhalten]({"stubs": ["schaltjahrReturn.py"], "command": "python3 test_schaltjahrReturn.py", "project": "python"})
 
+
 ## Kontrollfragen zu Rückgabewerten:
 
 ?[Rückgabewerte ...]
-- [x] dienen dazu Programmen zu ermöglichen, mit einander zu interagieren und Ergebnisse von Funktionen weiter zu verwenden.
+- [x] dienen dazu, Programmen zu ermöglichen, miteinander zu interagieren und Ergebnisse von Funktionen weiter zu verwenden.
 - [ ] sind ein Ersatz für Rücklaufzettel an Elternbriefen.
 - [x] können entweder direkt verwendet werden, oder in einer Variable zwischengespeichert werden.
 

@@ -76,13 +76,13 @@ JahreszahlPruefen(2000)
 - [x] funktionD
 ```python
 def funktionA(parameter):
-        funktion2(parameter)
+    funktion2(parameter)
 def funktionB():
-        funktion2(parameter)
+    funktion2(parameter)
 def funktionC(parameter):
-        funktion2(baum)
+    funktion2(baum)
 def funktionD(parameter1, parameter2):
-        funktionD(parameter1, parameter1 + parameter2)
+    funktionD(parameter1, parameter1 + parameter2)
 ```
 
 ?[Wir benötigen Parameter ...]

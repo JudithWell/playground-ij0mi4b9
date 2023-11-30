@@ -1,6 +1,6 @@
 # Rückblick: Listen iterieren
 
-In der letzten Lerneinheit haben wir **Listen** kennengelernt. Außerdem haben wir zwei Möglichkeiten kennengelernt, Listen zu durchlaufen, das heißt eine bestimmte folge von Anweisungen für jedes Listenelement auszuführen.
+In der letzten Lerneinheit haben wir **Listen** kennengelernt. Außerdem haben wir zwei Möglichkeiten behandelt, Listen zu durchlaufen, das heißt eine bestimmte Folge von Anweisungen für jedes Listenelement auszuführen.
 
 **Möglichkeit 1: Iteration über den Index der Elemente**
 
@@ -46,10 +46,10 @@ print(summe)
 # gibt 14 aus.
 ```
 
-Als kleine Übung wollen wir die Summenbildung wie oben in einer eigenen Funktion `addiereListe()` unterbringen. 
+Als kleine Übung wollen wir die Summenbildung wie oben (Zeile 6 bis 9) in einer eigenen Funktion `addiereListe()` unterbringen. 
 Die Funktion soll die Liste mit Werten im Parameter `liste` erhalten und gibt die Summe wieder zurückgeben:
 
-**Hinweis**: Hier ist die Rückgaben mit `return` und nicht die Ausgabe mit `print()` gemeint.
+**Hinweis**: Hier ist die Rückgabe mit `return` und nicht die Ausgabe mit `print()` gemeint.
 
 @[Listen addieren]({"stubs": ["addiereListe.py"], "command": "python3 test_addiereListe.py", "project": "python"})
 
@@ -65,7 +65,14 @@ positiv = positiveZahlen([5, -5, 7, 0])
 # positiv == [5, 7]
 ```
 
-**Beachte**: Um eine Liste an eine Funktion zu übergeben, muss sie nicht in eine Variable gespeichert werden, sondern kann auch direkt "am Platz des Parameters" mit den eckigen Klammern initialisiert werden.
+**Anmerkung zum zweiten Beispiel**: Um eine Liste an eine Funktion zu übergeben, muss sie nicht in eine Variable gespeichert werden, sondern kann auch direkt "am Platz des Parameters" mit den eckigen Klammern initialisiert werden.
+
+?[Die Funktion `positiveZahlen()` ...]
+- [ ] ... wandelt alle Einträge der übergebenen Liste in positive Zahlen um.
+- [x] ... erhält eine Liste als Parameter.
+- [x] ... liefert eine Liste als Rückgabewert.
+- [ ] ... kann auch eine Liste zurückliefern, die 0 enthält.
+- [x] ... liefert nur die Zahlen aus der Liste zurück, die positiv sind.
 
 Implementiere im folgenden Block die oben beschriebene Funktion `positiveZahlen()`!
 
