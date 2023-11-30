@@ -6,7 +6,7 @@ last_print_out = ""
 
 def new_print(x):
     global last_print_out
-    last_print_out = x
+    last_print_out = str(x)
     return orig_print(x)
 
 
