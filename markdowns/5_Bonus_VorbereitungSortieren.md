@@ -22,22 +22,27 @@ vertausche(liste, 1, 2)
 
 Implementiere nun die entsprechende Funktion `vertausche()`, die drei Parameter erhält: Die Liste und die zwei Indizes (bei 0 beginnend) der Elemente die vertauscht werden sollen.
 
+::: Hinweise
+- Greife auf die Elemente an den Indizes mit `liste[index]` zu.
+- Wahrscheinlich brauchst du noch eine Variable als Zwischenspeicher?
+:::
+
 @[Vertauschen zweier Listeneinträge]({"stubs": ["vertauschen.py"], "command": "python3 test_vertauschen.py", "project": "python"})
 
 ## Minimumsuche
 
 Ein Sortieralgorithmus, der sehr einfach zu verstehen ist, basiert darauf das kleinste Element in einer Liste zu finden. In einer Liste `[2, 4, 1]` wird das kleinste Element (hier `1`) lokalisiert und dann an die erste Stelle der Liste gelegt.
 
-Wir wollen zunächst nur eine Funktion `minimum()` programmieren, die als Parameter die Liste erhält und den Index des kleinsten Elements in der Liste zurückgibt. Aufrufe könnten so aussehen:
+Wir wollen zunächst nur eine Funktion `min()` programmieren, die als Parameter die Liste erhält und den Index des kleinsten Elements in der Liste zurückgibt. Aufrufe könnten so aussehen:
 
 ```python
 liste = [2, 4, 1]
 
-minIndex = minimum(liste)
+minIndex = min(liste)
 # minIndex == 2 (1 steht an dritter Stelle in der Liste, Indizes beginnen bei 0)
 ```
 
-Programmiere nun die entsprechende Funktion `minimum()`!
+Programmiere nun die entsprechende Funktion `min()`!
 
 ::: Hinweise:
 - Durchlaufe die Liste mit einer "index-basierten" Wiederholung

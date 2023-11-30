@@ -1,4 +1,4 @@
-def minimum(liste):
+def min(liste):
     
     
     

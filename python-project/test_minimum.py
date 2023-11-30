@@ -1,15 +1,4 @@
 import minimum as m
-import builtins
-
-min_used = False
-
-def new_min(x):
-    global min_used
-    min_used = True
-    return orig_min(x)
-
-orig_min = builtins.min
-builtins.min = new_min
 
 def send_msg(channel, msg):
     print("TECHIO> message --channel \"{}\" \"{}\"".format(channel, msg))
@@ -22,7 +11,7 @@ def fail():
     print("TECHIO> success false")
 
 def assertMini(liste, expected):
-    idx = m.minimum(liste)
+    idx = m.min(liste)
     assert idx == expected, "minimum({}) -> index == {}, erwartet: {}".format(liste, idx, expected)
 
 def test_vertauschen():   
