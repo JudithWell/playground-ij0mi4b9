@@ -8,7 +8,7 @@ plan:
   statement: markdowns/2_rueckgabewerte.md
 - title: Listen durchlaufen und ausgeben
   statement: markdowns/3_listen.md
-- title: Bonus: Schaltjahreslisten
+- title: "Bonus: Schaltjahreslisten"
   statement: markdowns/4_Bonus_schaltjahrlisten.md
 projects:
   python:
