@@ -69,23 +69,29 @@ JahreszahlPruefen(2000)
 
 ## Kontrollfragen zu Parametern
 
-?[Welche Funktionen verwenden Parameter (sinnvoll)?]
-- [x] def funktion(parameter):
+?[Welche der folgenden Funktionen verwenden Parameter (sinnvoll)?]
+- [x] funktionA
+- [ ] funktionB
+- [ ] funktionC
+- [x] funktionD
+```python
+def funktionA(parameter):
         funktion2(parameter)
-- [ ] def funktion():
+def funktionB():
         funktion2(parameter)
-- [ ] def funktion(parameter):
+def funktionC(parameter):
         funktion2(baum)
-- [x] def funktion(parameter1, parameter2):
-        funktion(parameter1, parameter1 + parameter2)
+def funktionD(parameter1, parameter2):
+        funktionD(parameter1, parameter1 + parameter2)
+```
 
 ?[Wir benötigen Parameter ...]
 - [x] um mit einzelnen Funktionen viele unterschiedliche ähnliche Dinge zu tun (z.B. print("A") und print("B"))
 - [ ] eigentlich gar nicht, sie sind nur dazu da, uns das Leben schwer zu machen.
 - [x] um Informationen von außerhalb einer Funktion in der Funktion verwenden zu können.
 
-?[Was stimmt bei Paramtern und Funktionen:]
-- [ ] Wenn ich eine Funktion `fun()` aufrufe, die einen Parameter mit dem Namen `zahl` hat, dann schreibe ich fun(zahl).
+?[Was stimmt bei Parametern und Funktionen:]
+- [ ] Wenn ich eine Funktion `fun()` aufrufe, die einen Parameter mit dem Namen `zahl` hat, dann muss der Aufruf `fun(zahl)` sein.
 - [x] Wenn ich eine Funktion `fun()` definieren will, die einen Parameter mit dem Namen `zahl` hat, dann schreibe ich `def fun(zahl):` usw.
 - [x] Wenn ich eine Variable `buchstabe = "a"` definiert habe, und sie an eine Funktion `def fun(zahl): ...` als Parameter übergeben will, dann schreibe ich zum Aufrufen der Funktion `fun(buchstabe)`.
 - [ ] Wenn ich eine Variable `buchstabe = "a"` als Parameter an eine Funktion `fun(...)` übergeben will, dann muss die Funktion so definiert sein: `def fun(buchstabe): ...`
