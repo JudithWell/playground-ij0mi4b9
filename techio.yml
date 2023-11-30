@@ -11,7 +11,7 @@ plan:
 - title: "Bonus: Schaltjahreslisten"
   statement: markdowns/4_Bonus_schaltjahrlisten.md
 - title: "Bonus: Vorbereitungen"
-  statemen: markdowns/5_Bonus_VorbereitungSortieren.md
+  statement: markdowns/5_Bonus_VorbereitungSortieren.md
 projects:
   python:
     root: /python-project
