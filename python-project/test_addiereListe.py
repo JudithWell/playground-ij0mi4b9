@@ -7,8 +7,8 @@ def new_addiere(x):
     addiere_used += 1
     return orig_addiere(x)
 
-orig_addiere = addiere
-addiere = new_addiere
+orig_addiere = addiereListe.addiere
+addiereListe.addiere = new_addiere
 
 def send_msg(channel, msg):
     print("TECHIO> message --channel \"{}\" \"{}\"".format(channel, msg))
