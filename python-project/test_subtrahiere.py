@@ -28,11 +28,11 @@ def fail():
 def test_subtrahiere():
     try:
         subtrahiere.subtrahiere(1, 1)
-        assert last_print_out == "0", "subtrahiere(1, 1) Falsches Ergebnis, erwartet: {}".format(0)
+        assert last_print_out == "0", "subtrahiere(1, 1) -> {} Falsches Ergebnis, erwartet: {}".format(last_print_out, 0)
         subtrahiere.subtrahiere(-1, 5)
-        assert last_print_out == "-6", "subtrahiere(-1, 5) Falsches Ergebnis, erwartet: {}".format(-6)
+        assert last_print_out == "-6", "subtrahiere(-1, 5) -> {} Falsches Ergebnis, erwartet: {}".format(last_print_out, -6)
         subtrahiere.subtrahiere(5, 1)
-        assert last_print_out == "4", "subtrahiere(5, 1) Falsches Ergebnis, erwartet: {}".format(4)
+        assert last_print_out == "4", "subtrahiere(5, 1) -> {} Falsches Ergebnis, erwartet: {}".format(last_print_out, 4)
 
         # success
         builtins.print = orig_print

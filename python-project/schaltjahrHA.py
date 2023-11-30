@@ -62,6 +62,8 @@ def fail():
 def test_schaltjahr():
     global jahr
     
+    print("Automatisierte Tests:")
+    
     try:
         # Test 1:
         jahr = 1996
