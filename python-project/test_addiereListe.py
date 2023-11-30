@@ -33,7 +33,6 @@ def test_addiereListe():
         zahl = aL.addiereListe([1,1,1,1, 5, -5])
         assert zahl == 4, "addiereListe([1,1,1,1, 5, -5]) Falsches Ergebnis, erwartet: {}".format(4)
         
-        print("addiereused = "+ str(addiere_used))
         if addiere_used != 13:
             fail()
             send_msg("Achtung!", "Bitte verwende die vorgegebene Funktion addiere()!")
