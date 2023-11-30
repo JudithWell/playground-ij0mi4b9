@@ -1,4 +1,4 @@
-from addiereListe import *
+import addiereListe as aL
 
 addiere_used = 0
 
@@ -7,8 +7,8 @@ def new_addiere(x):
     addiere_used += 1
     return orig_addiere(x)
 
-orig_addiere = addiereListe.addiere
-addiereListe.addiere = new_addiere
+orig_addiere = aL.addiere
+aL.addiere = new_addiere
 
 def send_msg(channel, msg):
     print("TECHIO> message --channel \"{}\" \"{}\"".format(channel, msg))
@@ -25,11 +25,11 @@ def fail():
 def test_addiereListe():
     global addiere_used
     try:
-        zahl = addiereListe([1, -1])
+        zahl = aL.addiereListe([1, -1])
         assert zahl == 0, "addiereListe([1, -1]) Falsches Ergebnis, erwartet: {}".format(0)
-        zahl = addiereListe([1, 2, 3, -6, -6])
+        zahl = aL.addiereListe([1, 2, 3, -6, -6])
         assert zahl == -6, "addiereListe([1, 2, 3, -6, -6]) Falsches Ergebnis, erwartet: {}".format(-6)
-        zahl = addiereListe([1,1,1,1, 5, -5])
+        zahl = aL.addiereListe([1,1,1,1, 5, -5])
         assert zahl == 4, "addiereListe([1,1,1,1, 5, -5]) Falsches Ergebnis, erwartet: {}".format(4)
         
         print("addiereused = "+ str(addiere_used))
