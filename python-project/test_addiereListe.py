@@ -24,6 +24,7 @@ def fail():
     
 def test_addiereListe():
     global addiere_used
+    
     try:
         zahl = aL.addiereListe([1, -1])
         assert zahl == 0, "addiereListe([1, -1]) Falsches Ergebnis, erwartet: {}".format(0)
