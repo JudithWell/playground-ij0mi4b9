@@ -2,10 +2,10 @@ import addiereListe as aL
 
 addiere_used = 0
 
-def new_addiere(x):
+def new_addiere(x, y):
     global addiere_used
     addiere_used += 1
-    return orig_addiere(x)
+    return orig_addiere(x, y)
 
 orig_addiere = aL.addiere
 aL.addiere = new_addiere
